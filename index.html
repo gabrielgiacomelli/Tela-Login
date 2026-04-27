@@ -1,13 +1,13 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- Importa o Bootstrap (estilos prontos) -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<!-- Classes do Bootstrap para centralizar e estilizar -->
 <body class="bg-light d-flex align-items-center justify-content-center vh-100">
     <!-- bg-light = fundo cinza claro -->
      <!-- d-flex = ativa o flexbox -->
@@ -18,71 +18,60 @@
 <!-- container = cria margens laterais e organiza -->
     <!-- Linha do sistema de grid -->
     <div class="row justify-content-center">
-        <!-- se adapta ao tamanho da tela -->
         <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-            <!-- Card (caixa do formulário) -->
+
             <div class="card p-4 shadow">
                 <h2 class="text-center mb-4">Login</h2>
-                <form id="formLogin">
+
+                <form>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input  type="email" id="email" class="form-control" placeholder="Digite o email" required>
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
                     </div>
 
                     <div class="mb-3">
-                        <label for="senha" class="form-label">Senha</label>
-                        <input  type="password"  id="senha"   class="form-control"  placeholder="Digite a senha" required>
+                        <label class="form-label">Senha</label>
+                        <input type="password" class="form-control">
                     </div>
 
-                    <button type="submit" class="btn btn-primary w-100"> Entrar</button>
+                    <button class="btn btn-primary w-100">Entrar</button>
                 </form>
-                <div class="text-center mt-3 d-flex">
-                    <P>Não tem conta?</P>
+
+                <div class="text-center mt-3">
+                    <a href="#">Esqueci minha senha</a><br>
                     <a href="#">Criar conta</a>
                 </div>
-
-                <!-- Área para mostrar mensagens -->
-                <div id="mensagem" class="text-center mt-3"></div>
 
             </div>
         </div>
     </div>
 </main>
 
-<!-- JavaScript -->
-<script>
-    // Seleciona o formulário
-    const form = document.getElementById("formLogin");
-
-    // Seleciona a área de mensagem
-    const mensagem = document.getElementById("mensagem");
-
-    // Evento ao enviar o formulário
-    form.addEventListener("submit", function(event) {
-        // Impede recarregar a página
-        event.preventDefault();
-
-        // Pega os valores digitados
-        const email = document.getElementById("email").value;
-        const senha = document.getElementById("senha").value;
-
-        // Validação simples
-        if (email === "" || senha === "") {
-            mensagem.style.color = "red";
-            mensagem.textContent = "Preencha todos os campos!";
-            return;
-        }
-
-        // Simulação de login
-        if (email === "admin@email.com" && senha === "123456") {
-            mensagem.style.color = "green";
-            mensagem.textContent = "Login realizado com sucesso!";
-        } else {
-            mensagem.style.color = "red";
-            mensagem.textContent = "E-mail ou senha inválidos!";
-        }
-    });
-</script>
-
+<!--
+bg-light → fundo claro
+d-flex → ativa flexbox
+align-items-center → centraliza vertical
+justify-content-center → centraliza horizontal
+vh-100 → altura total da tela
+container → estrutura central da página
+row → linha do grid
+justify-content-center → centraliza colunas
+col-12 → 100% no celular
+col-sm-8 → 8 colunas em telas pequenas
+col-md-6 → metade da tela
+col-lg-4 → menor no desktop
+card → caixa estilizada
+p-4 → espaçamento interno
+shadow → sombra
+text-center → centraliza texto
+mb-4 → margem inferior
+mb-3 → espaço entre elementos
+form-label → estilo do label
+form-control → estilo do input
+btn → botão padrão
+btn-primary → botão azul
+w-100 → largura total
+mt-3 → margem superior
+ -->
 </body>
 </html>
