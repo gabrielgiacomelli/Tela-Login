@@ -9,35 +9,54 @@
 </head>
 
 <body class="bg-light d-flex align-items-center justify-content-center vh-100">
-    <!-- bg-light = fundo cinza claro -->
-     <!-- d-flex = ativa o flexbox -->
-      <!-- align-items-center = centraliza verticalmente -->
-       <!-- justify-content-center = centraliza horizontalmente -->
-        <!-- vh-100 = altura 100% da tela -->
+    <!-- bg-light → fundo cinza claro -->
+     <!-- d-flex → ativa o flexbox -->
+      <!-- align-items-center → centraliza verticalmente -->
+       <!-- justify-content-center → centraliza horizontalmente -->
+        <!-- vh-100 → altura 100% da tela -->
 <main class="container">
-<!-- container = cria margens laterais e organiza -->
+<!-- container → cria margens laterais e organiza -->
     <!-- Linha do sistema de grid -->
     <div class="row justify-content-center">
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+        <!-- row → linha do grid -->
+         <!-- justify-content-center → centraliza as colunas -->
+        <div class="col-lg-4">
+            <!-- col-lg-4 = menor no desktop  -->
 
             <div class="card p-4 shadow">
+                <!-- card = cria caixa estilizada -->
+                 <!-- p-4 = padding -->
+                  <!-- shadow = sombra -->
                 <h2 class="text-center mb-4">Login</h2>
+                <!-- text-center = centraliza texto -->
+                 <!-- mb-4 = margem embaixo -->
 
                 <form>
                     <div class="mb-3">
+                        <!-- mb-3 = espaço abaixo -->
                         <label class="form-label">Email</label>
+                        <!-- form-label = estilo padrão de label -->
                         <input type="email" class="form-control">
+                        <!-- form-control = estilo padrão de input -->
                     </div>
 
                     <div class="mb-3">
+                        <!-- mb-3 = espaço abaixo -->
                         <label class="form-label">Senha</label>
+                        <!-- form-label = estilo padrão de label -->
                         <input type="password" class="form-control">
+                        <!-- form-control = estilo padrão de input -->
                     </div>
 
                     <button class="btn btn-primary w-100">Entrar</button>
+                    <!-- btn = estilo de botão -->
+                     <!-- btn-primary = cor azul padrão -->
+                      <!-- w-100 = largura 100% -->
                 </form>
 
                 <div class="text-center mt-3">
+                    <!-- text-center = centraliza -->
+                     <!-- mt-3 = margem em cima -->
                     <a href="#">Esqueci minha senha</a><br>
                     <a href="#">Criar conta</a>
                 </div>
@@ -46,32 +65,5 @@
         </div>
     </div>
 </main>
-
-<!--
-bg-light → fundo claro
-d-flex → ativa flexbox
-align-items-center → centraliza vertical
-justify-content-center → centraliza horizontal
-vh-100 → altura total da tela
-container → estrutura central da página
-row → linha do grid
-justify-content-center → centraliza colunas
-col-12 → 100% no celular
-col-sm-8 → 8 colunas em telas pequenas
-col-md-6 → metade da tela
-col-lg-4 → menor no desktop
-card → caixa estilizada
-p-4 → espaçamento interno
-shadow → sombra
-text-center → centraliza texto
-mb-4 → margem inferior
-mb-3 → espaço entre elementos
-form-label → estilo do label
-form-control → estilo do input
-btn → botão padrão
-btn-primary → botão azul
-w-100 → largura total
-mt-3 → margem superior
- -->
 </body>
 </html>
